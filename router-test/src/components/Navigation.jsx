@@ -1,4 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
+import users from "../js/users.js";
 
 export function Navigation() {
     const navigate = useNavigate();
@@ -10,6 +11,9 @@ export function Navigation() {
         </li>
         <li>
           <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/users">Utilisateurs</Link>
         </li>
         <>
             <button onClick={() => navigate(-1)}>Go Back</button>

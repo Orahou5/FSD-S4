@@ -14,7 +14,7 @@ function App() {
         value={currentMessage}
         onChange={(e) => dispatch(changeMessage(e.target.value))}
       />
-      <button onClick={() => dispatch(addMessage())}>Ajouter</button>
+      <button disabled={currentMessage == ""} onClick={() => dispatch(addMessage())}>Ajouter</button>
       <button onClick={() => dispatch(clearMessages())}>Effacer</button>
       {errorMessage && <p className='error-message'>{errorMessage}</p>}
       <ul className='list-no-bullets'>

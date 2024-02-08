@@ -40,3 +40,26 @@
 .read-the-docs {
   color: #888;
 }
+
+.list-no-bullets {
+  list-style: none;
+  padding: 0;
+}
+
+.error-message {
+  color: #ff4d4d;
+  font-weight: 500;
+  margin-top: 0.5em;
+}
+
+.red-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0em 0.6em;
+  font-size: 1em;
+  margin-left: 0.5em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}

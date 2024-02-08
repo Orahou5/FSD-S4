@@ -6,6 +6,6 @@ export function randomNumberInRangeAsync(min, max) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             resolve(randomNumberInRange(min, max));
-        }, 5000);
+        }, 500);
     });
 }
